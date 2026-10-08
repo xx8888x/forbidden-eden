@@ -1,0 +1,32 @@
+# 只收程式碼與設定；HS2 匯出素材、Unity 產生物、建置、工作檔一律不進 repo。
+
+# 根目錄：預設全部忽略，再逐項放行
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/啟動_離線預覽.bat
+!/Tools/
+!/ForbiddenEden/
+
+# Unity 專案：只放行 Assets、Packages、ProjectSettings
+/ForbiddenEden/*
+!/ForbiddenEden/Assets/
+!/ForbiddenEden/Packages/
+!/ForbiddenEden/ProjectSettings/
+
+# HS2 原廠素材（版權屬 Illusion，用 Assets/Editor 的匯出工具在本機重新產生）
+/ForbiddenEden/Assets/HS2Export/
+/ForbiddenEden/Assets/HS2Export.meta
+/ForbiddenEden/Assets/Resources/HS2/
+/ForbiddenEden/Assets/Resources/HS2.meta
+/ForbiddenEden/Assets/hs2_*.png
+/ForbiddenEden/Assets/hs2_*.png.meta
+
+# 雜項
+__pycache__/
+*.pyc
+*.csproj
+*.sln
+.vs/
+.idea/
